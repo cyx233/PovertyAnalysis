@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import pytorch_lightning as pl
 from torchmetrics.functional import accuracy
-
+import pdb 
 from resnet import *
 
 class baseline_module(pl.LightningModule):
@@ -48,6 +48,7 @@ class baseline_module(pl.LightningModule):
 #             return {'optimizer': optimizer}
 
     def single_step(self, batch, batch_idx):
+
         x, y = batch
         y = y.long()
 

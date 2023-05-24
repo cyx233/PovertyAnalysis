@@ -26,7 +26,7 @@ class wildDM(pl.LightningDataModule):
         self.urban_flag = args.urban_flag
         self.train_val_split_ratio = args.train_val_split_ratio
         dataset_helper = DatasetHelper(csv_file = self.metadata_path, 
-                              root_dir = self.datadir, country_name = self.country_name, urban = self.urban_flag)
+                              root_dir = self.datadir)
         
         train_image_paths, val_image_paths, idx_to_class, class_weights = dataset_helper.get_image_paths(self.train_val_split_ratio)
         
@@ -39,11 +39,11 @@ class wildDM(pl.LightningDataModule):
         parser = parent_parser.add_argument_group('wildDM')
         parser.add_argument("--mode", '-mode', type = str, default = 'country')
         parser.add_argument("--country_name", '-cntry', type = str, default = '0')
-        parser.add_argument("--metadata_path", '-metapath', type = str, default = '/datasets/cs255-sp22-a00-public/tmp_for_partitioned_images3/partitioned_images3/tables/train_table.csv')
+        parser.add_argument("--metadata_path", '-metapath', type = str, default = '/data/sateesh/UCSD/PovertyAnalysis/HW5/public_tables/train.csv')
         parser.add_argument("--chkpt_path", '-chkptpath', type = str, default = 'checkpoints/')
         #parser.add_argument("--native", '-nwds', action = 'store_true')
         parser.add_argument("--urban_flag", '-urban', type = bool, default = False)
-        parser.add_argument("--datadir", '-dr', type = str, default = '/datasets/cs255-sp22-a00-public/tmp_for_partitioned_images3/partitioned_images3/train/')
+        parser.add_argument("--datadir", '-dr', type = str, default = '/data/sateesh/UCSD/anon_images')
         parser.add_argument("--batch_size", '-bs', type = int, default = 2)
         parser.add_argument("--num_workers", '-nw', type = int, default = 1)
         parser.add_argument("--train_val_split_ratio", '-ratio', type = float, default = 0.8)

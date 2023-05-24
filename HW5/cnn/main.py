@@ -3,9 +3,9 @@ from wildDM import *
 import argparse
 from pl_modules import *
 import pytorch_lightning as pl
-from pytorch_lightning.plugins import DDPPlugin
 from pytorch_lightning.callbacks import ModelCheckpoint
-
+AVAILABLE_GPU = 1
+os.environ["CUDA_VISIBLE_DEVICES"] = str(AVAILABLE_GPU)
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--epochs", '-e', type = int, default = 30)
@@ -30,14 +30,13 @@ if __name__ == '__main__':
         monitor="vloss",
         mode="min",
         dirpath=args.chkpt_path,
-        filename="rural-country"+args.country_name+"-{epoch:02d}-{vacc:.2f}",
+        filename="Baseline"+args.country_name+"-{epoch:02d}-{vacc:.2f}",
     )
     
     model = baseline_module(args)
 
     trainer = pl.Trainer(
-        gpus = 1, accelerator = 'gpu', max_epochs = args.epochs, precision = 16,
-        strategy = DDPPlugin(find_unused_parameters = False),
+       accelerator = 'gpu', max_epochs = args.epochs, precision = 16,
         #default_root_dir = args.chkpt_path,
         callbacks = [checkpoint_callback]
     )
