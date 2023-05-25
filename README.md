@@ -26,11 +26,9 @@ Note, random test set is an easier one and follows the same distribution as the 
 ## Starting points 
 We provide working solutions to the HW, on which you are expected to improve. These starting points are provided in [this GitHub repository](https://github.com/SateeshKumar21/PovertyAnalysis).
 
-The starting points include:
-1. A solution based on KDTree pre-processing + XGBoost.
-2. A solution based on CNN. 
+The starting points include a solution based on KDTree pre-processing + XGBoost.
 
-The CNN solution benefits from using the GPUs on Datahub/Vocareum. The XGBoost solution can be run on most laptops/work-stations.
+We also encourage the students to explore Convolutional Neural Networks for this task. The students should be able to utilize GPUs on Datahub/Vocareum in order to do so. The XGBoost solution on the other hand can be run on most laptops/work-stations.
 
 ## Performance evaluations
 We will evaluate you on two different test sets using two different metrics.
