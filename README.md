@@ -11,7 +11,11 @@ This dataset comprises images from both urban and rural areas. In general, urban
 ## Dataset 
 You can find the image files at the following location:
 1. DataHub: TBD
-2. Vocareum: TBD
+2. Vocareum: 
+   - `Poverty Analysis Spring 2023/resource/asnlib/publicdata/anon_images/`
+   - `Poverty Analysis Spring 2023/resource/asnlib/publicdata/train.csv`
+   - `Poverty Analysis Spring 2023/resource/asnlib/publicdata/random_test_reduct.csv`
+   - `Poverty Analysis Spring 2023/resource/asnlib/publicdata/country_test_reduct.csv`
 
 All files (train and test) are stored inside this folder in npz format. We divided this dataset into one train and 2 test sets. We separated out ~25% of the data to build a countries test set (`Country_test_reduct.csv`) s.t. the test countries that are not present in the training set. In the random test set, we separated 25% of the instances at random from the remaining 75% of data to generate a random test set (`Random_test_reduct.csv`).
 
