@@ -77,7 +77,7 @@ Each csv file should have the following columns:
 ## Startup Code
 Github repo: [Poverty Analysis](https://github.com/SateeshKumar21/PovertyAnalysis)
 
-The repository contains two baselines, CNN and XGboost. 
+The repository contains a baseline which uses XGBoost. 
 
 ## Teams
 
