@@ -1,5 +1,3 @@
-
-
 from lib.KDTreeEncoding import *
 
 import xgboost as xgb
@@ -63,7 +61,12 @@ def train_boosted_trees(D):
     return styled_logs
 
 if __name__=='__main__':
-    poverty_dir=sys.argv[1]
+    import os
+    path = os.getcwd()
+    _uname = path.split('/')[2]
+
+    poverty_dir=f'/home/{_uname}/public/cs255-sp22-a00-public/poverty'
+    image_dir=poverty_dir+'anon_images/'
     T=timer()
     depth=8   #for KDTree
 
@@ -75,7 +78,7 @@ if __name__=='__main__':
     print(f'found {len(files)} files')
 
     T.mark('listed files')
-    train_table='../public_tables/train.csv'
+    train_table=f'/home/{_uname}/public/Datasets_public/Final_Project_Data/train.csv'
     df=pd.read_csv(train_table,index_col=0)
     df.index=df['filename']
 

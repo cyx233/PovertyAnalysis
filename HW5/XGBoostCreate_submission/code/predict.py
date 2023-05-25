@@ -30,7 +30,11 @@ class timer:
 
 T=timer()
             
-poverty_dir=sys.argv[1]
+import os
+path = os.getcwd()
+_uname = path.split('/')[2]
+
+poverty_dir=f'/home/{_uname}/public/cs255-sp22-a00-public/poverty/'
 image_dir=poverty_dir+'anon_images/'
 depth=8   #for KDTree
 
@@ -46,7 +50,9 @@ scaling_std=std
 
 #read out the ensemble of classifiers.
 bst_list=[x['bst'] for x in styled_logs[1]['log']]
-
+import os
+path = os.getcwd()
+_uname = path.split('/')[2]
 T.mark('read pickle file')
 # ## Iterate over test sets
 folds=[{'in':'country_test_reduct.csv','out':'results_country.csv'},
@@ -56,7 +62,7 @@ for fold_i in range(len(folds)):
     fold=folds[fold_i]
 
     #load table entries
-    test_csv=f'../public_tables/{fold["in"]}'
+    test_csv=f'/home/{_uname}/public/Datasets_public/Final_Project_Data/{fold["in"]}'
     test=pd.read_csv(test_csv,index_col=0)
     test.index=test['filename']
     test.shape
