@@ -87,7 +87,7 @@ The repository contains a baseline which uses XGBoost.
 ## Teams
 
 Teams can consist of 1-4 members. Teams have to be chosen by **29th May 2023** and cannot be changed. We will open a dummy gradescope assignment for team selection.
-By default, each student is in their own team. The grade of all members of a team is the grade given by the team.
+By default, each student is in their own team. The grade of all members of a team is the grade given by the team. Please note that you need to finalize your project group before making any submissions for the project.
 
 ## Grades 
 
