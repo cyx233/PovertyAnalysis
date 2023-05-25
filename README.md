@@ -29,7 +29,7 @@ All the csv files are present in this repo in `public_tables`. Note, random test
 
 
 ## Starting points 
-We provide working solutions to the HW, on which you are expected to improve. These starting points are provided in [this GitHub repository](https://github.com/SateeshKumar21/PovertyAnalysis).
+We provide working solutions to the HW, on which you are expected to improve. These starting points are provided in [this GitHub repository](https://github.com/SateeshKumar21/PovertyAnalysis). CSE255 students may refer to the `main` branch whereas DSC232R students can refer to the `Vocareum` branch.
 
 The starting points include a solution based on KDTree pre-processing + XGBoost.
 
