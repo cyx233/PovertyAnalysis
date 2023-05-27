@@ -103,7 +103,7 @@ Each group can make at most one submission per group member per 24 hour period.
 
 ## Prizes
 
-The top scoring group from exach class (CSE255, DSC232R) will be given a certificate and a $500 prize. The prize will be given in the HDSI 5 years celebrations.
+The top scoring group from exach class (CSE255, DSC232R) will be given a certificate and a $500 prize. The prize will be given in the HDSI 5 years celebrations on June 5 . Competition results will be chosen  according to the state of the leaderboards on June  3 at midnight. 
 
 
 
