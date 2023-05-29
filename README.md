@@ -9,9 +9,12 @@ This dataset comprises images from both urban and rural areas. In general, urban
 
 
 ## Dataset 
-You can find the image files at the following location:
+You can find the image files and the CSV files at the following location:
 1. DataHub:
-   - `/home/username/public/cs255-sp22-a00-public/poverty`
+   - `/home/username/public/cs255-sp22-a00-public/poverty/`
+   - `/home/username/public/Datasets_public/Final_Project_Data/train.csv`
+   - `/home/username/public/Datasets_public/Final_Project_Data/random_test_reduct.csv`
+   - `/home/username/public/Datasets_public/Final_Project_Data/country_test_reduct.csv`
 3. Vocareum: 
    - `Poverty Analysis Spring 2023/resource/asnlib/publicdata/anon_images/`
    - `Poverty Analysis Spring 2023/resource/asnlib/publicdata/train.csv`
