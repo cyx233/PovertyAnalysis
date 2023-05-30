@@ -99,14 +99,11 @@ The feedback on each submission consists of two average scores - corresponding t
 
 These will also appear on a class leaderboard. The name under which it appears is your team name.  Please note that the asymmetric loss can be a value between -2 and 1, and appears in the leaderboard that way. In your evaluation test cases, this value is mapped to a number between 0 and 10 so that you don't get negative points.
 
+## Leaderboard
+https://www.gradescope.com/courses/523850/assignments/2773170/leaderboard
+
 ## Number of Submissions Per Day
 Each group can make at most one submission per group member per 24 hour period.
 
-
-
 ## Prizes
-
-The top scoring group from exach class (CSE255, DSC232R) will be given a certificate and a $500 prize. The prize will be given in the HDSI 5 years celebrations on June 5 . Competition results will be chosen  according to the state of the leaderboards on June  3 at midnight. 
-
-
-
+The top scoring group from each class (CSE255, DSC232R) will be given a certificate and a $500 prize. The prize will be given in the HDSI 5 years celebrations on June 5. Competition results will be chosen  according to the state of the leaderboards on June 3 at midnight.
