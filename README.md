@@ -68,8 +68,7 @@ Go to `HW Assignment 5` and submit your files. You will be re-routed to a page w
 There are four files to submit:
 1. `results.csv` — your predictions on the random test set 
 2. `results_country.csv` — your predictions on the country test set 
-3. `code.zip` or `code.tgz` — your code in a zip file, max size of zip file is 10MB.
-4. `explanation.md` - your explanation for your implementation
+3. `explanation.md` - your explanation for your implementation
 
 Each csv file should have the following columns:
 
@@ -103,7 +102,7 @@ These will also appear on a class leaderboard. The name under which it appears i
 https://www.gradescope.com/courses/523850/assignments/2773170/leaderboard
 
 ## Number of Submissions Per Day
-Each group can make at most one submission per group member per 24 hour period.
+Each group can make at most six submission per group member per 24 hour period.
 
 ## Prizes
 The top scoring group from each class (CSE255, DSC232R) will be given a certificate and a $500 prize. The prize will be given in the HDSI 5 years celebrations on June 5. Competition results will be chosen  according to the state of the leaderboards on June 3 at midnight.
