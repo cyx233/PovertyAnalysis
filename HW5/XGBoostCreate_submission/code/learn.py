@@ -62,10 +62,15 @@ def train_boosted_trees(D):
 
 if __name__=='__main__':
     import os
+    import json
+
+    with open("config.json") as f:
+        config = json.load(f)
+
     path = os.getcwd()
     _uname = path.split('/')[2]
 
-    poverty_dir=f'/home/{_uname}/public/cs255-sp22-a00-public/poverty'
+    poverty_dir=config['poverty_dir']
     image_dir=poverty_dir+'anon_images/'
     T=timer()
     depth=8   #for KDTree
@@ -78,7 +83,7 @@ if __name__=='__main__':
     print(f'found {len(files)} files')
 
     T.mark('listed files')
-    train_table=f'/home/{_uname}/public/Datasets_public/Final_Project_Data/train.csv'
+    train_table=os.path.join(config['csv_dir'], 'train.csv')
     df=pd.read_csv(train_table,index_col=0)
     df.index=df['filename']
 

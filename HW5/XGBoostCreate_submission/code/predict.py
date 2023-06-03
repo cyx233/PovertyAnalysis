@@ -31,10 +31,14 @@ class timer:
 T=timer()
             
 import os
+import json
 path = os.getcwd()
 _uname = path.split('/')[2]
 
-poverty_dir=f'/home/{_uname}/public/cs255-sp22-a00-public/poverty/'
+with open("config.json") as f:
+    config = json.load(f)
+
+poverty_dir=config['poverty_dir']
 image_dir=poverty_dir+'anon_images/'
 depth=8   #for KDTree
 
@@ -62,7 +66,7 @@ for fold_i in range(len(folds)):
     fold=folds[fold_i]
 
     #load table entries
-    test_csv=f'/home/{_uname}/public/Datasets_public/Final_Project_Data/{fold["in"]}'
+    test_csv=os.path.join(config['csv_dir'], fold['in'])
     test=pd.read_csv(test_csv,index_col=0)
     test.index=test['filename']
     test.shape
