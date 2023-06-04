@@ -128,3 +128,6 @@ dmypy.json
 
 .DS_Store
 .idea/
+
+HW5/XGBoostCreate_submission/data/*
+HW5/XGBoostCreate_submission/data/*/*

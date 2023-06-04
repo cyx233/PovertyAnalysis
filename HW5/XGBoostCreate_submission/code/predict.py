@@ -39,7 +39,7 @@ with open("config.json") as f:
     config = json.load(f)
 
 poverty_dir=config['poverty_dir']
-image_dir=poverty_dir+'anon_images/'
+image_dir=os.path.join(poverty_dir,'anon_images')
 depth=8   #for KDTree
 
 import pickle as pkl

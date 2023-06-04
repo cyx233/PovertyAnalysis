@@ -1,4 +1,4 @@
 {
-	"poverty_dir": "",
-	"csv_dir": ""
+	"poverty_dir": "/home/yxchen/Projects/PovertyAnalysis/HW5/XGBoostCreate_submission/data/poverty_dir",
+	"csv_dir": "/home/yxchen/Projects/PovertyAnalysis/HW5/XGBoostCreate_submission/data/csv_dir"
 }
